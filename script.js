@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const removeBtn = document.createElement('button');
         removeBtn.textContent = 'Remove';
-        removeBtn.className = 'remove-btn';
+        removeBtn.classList.add('remove-btn');
         removeBtn.onclick = () => {
             li.remove();
             removeTaskFromStorage(taskText);
@@ -61,4 +61,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
     loadTasks();
 });
-
